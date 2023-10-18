@@ -1,0 +1,54 @@
+#loading-indicator{
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	z-index: 9999;
+	margin-left: -120px;
+	margin-top: -51px;
+}
+
+
+
+
+.input-file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  + .js-labelFile {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 10px;
+    cursor: pointer;
+    .icon:before {
+      //font-awesome
+      content: "\f093";
+    }
+    &.has-file {
+      .icon:before {
+        //font-awesome
+        content: "\f00c";
+        color: #5AAC7B;
+      }
+    }
+  }
+}
+
+.bootstrap-select {
+  border: 1px solid #d9dcdf !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+      background-color: #299406 !important;
+      font-size: 15px;
+      color: #fff;
+}
+
+.error{
+      border-color: red !important;
+      color: red !important;
+      text-align: left !important;
+}

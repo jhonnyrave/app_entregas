@@ -1,0 +1,105 @@
+
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+
+<div class="row">
+	<div class="col-md-6">
+		<div class="panel panel-inverse">
+			<div class="panel-heading">
+				<div class="panel-heading-btn">
+					<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+					<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+					<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+				</div>
+				<h4 class="panel-title">Crear Modificar Usuario</h4>
+			</div>
+			<div class="panel-body">
+				<form class="form" role="form" name='frm' id='frm' autocomplete="off">
+					<div class="form-group">
+						<label>Usuario</label>
+						<input type="text" class="form-control" id="usuario" name='usuario' required>
+					</div>
+					<div class="form-group">
+						<label>Nombre</label>
+						<input type="text" class="form-control" id="nombres" name='nombres' required>
+					</div>
+					<div class="form-group">
+						<label>Apellido</label>
+						<input type="text" class="form-control" id="apellidos" name='apellidos' required>
+					</div>
+					<div class="form-group">
+						<label>Correo</label>
+						<input type="email" class="form-control" id="correo" name='correo' required>
+					</div>
+					<div class="form-group">
+						<label>Contraseña</label>
+						<input type="password" class="form-control pass" id="password1" name="password1" autocomplete="off">
+					</div>
+					<div class="form-group">
+						<label>Confirmar Contraseña</label>
+						<input type="password" class="form-control pass" id="password2" name="password2">
+					</div>
+					<div class="checkbox checkbox-css m-b-20">					
+						<input type="checkbox" name="estado" id="estado" value='A'>
+						<label for="estado">Activo</label>
+					</div>
+					<div class="form-group">
+						<input type="file" name="file" id="file" class="input-file file" accept="image/png" value="">
+						<label for="file" class="btn btn-green js-labelFile">
+							<i class="fa fa-plus"> </i>
+							<span class="js-fileName"> Seleccionar Imagen</span>
+						</label>
+					</div>
+					<div class="pull-right">
+						<a href="JAVASCRIPT:void(0)" class="btn btn-success" id='grabar-usuario'><i class="fa fa-floppy-o" ></i> Grabar</a>
+						<a href="JAVASCRIPT:void(0)" class="btn btn-warning" id='limpiar-formulario'><i class="fa fa-arrow-circle-o-right" ></i> Limpiar</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-6">
+		<div class="panel panel-inverse">
+			<div class="panel-heading">
+				<div class="panel-heading-btn">
+					<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+					<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+					<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+				</div>
+				<h4 class="panel-title">Lista de Usuarios</h4>
+			</div>
+			<div class="panel-body">
+
+
+				<div class="btn-group pull-right">
+					<a href="#" class="btn btn-white btn-sm width-90">Filtrar</a>
+					<a href="#" class="btn btn-white btn-sm dropdown-toggle width-30 no-caret" data-toggle="dropdown" aria-expanded="false">
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu pull-right" x-placement="top-start">
+						<li><a href="javascript:void(0);" id="listar-activos">Activos</a></li>
+						<li><a href="javascript:void(0);" id="listar-inactivos">Inactivos</a></li>
+					</ul>
+				</div>
+
+				<table class="table table-hover" id='tabla-listado'>
+					<thead>
+						<tr>
+							<th>Usuario</th>
+							<th>Nombres</th>
+							<th>Apellidos</th>
+							<th>Correo</th>
+							<th>Imagen</th>
+							<img src="">
+							<th class="text-right">Acciones</th>
+						</tr>
+					</thead>
+					<tbody>
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

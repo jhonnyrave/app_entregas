@@ -1,0 +1,70 @@
+<!-- begin login-cover -->
+<div class="login-cover">
+  <div
+    class="login-cover-image"
+    style="
+      background-image: url(../openCore/static/template/default/assets/img/login-bg/login-bg-18.jpg);
+    "
+    data-id="login-cover-image"
+  ></div>
+  <div class="login-cover-bg"></div>
+</div>
+<!-- begin #page-container -->
+<div id="page-container" class="fade">
+  <!-- begin login -->
+  <div class="login login-v2" data-pageload-addclass="animated fadeIn">
+    <!-- begin brand -->
+    <div class="login-header">
+      <div class="brand">
+        <span class="logo"></span> <b>[[ERP]]</b> [[DESCRIPCION]]
+      </div>
+      <div class="icon">
+        <i class="fa fa-lock"></i>
+      </div>
+    </div>
+    <!-- end brand -->
+    <!-- begin login-content -->
+    <div class="login-content">
+      <form
+        class="form floating-label"
+        accept-charset="utf-8"
+        method="post"
+        name="frm"
+        id="frm"
+      >
+        <div class="form-group m-b-20">
+          <input
+            type="text"
+            class="form-control form-control-lg"
+            id="username"
+            name="username"
+            placeholder="Usuario"
+            required
+          />
+        </div>
+        <div class="form-group m-b-20">
+          <input
+            type="password"
+            class="form-control form-control-lg"
+            id="password"
+            name="password"
+            placeholder="Clave"
+            required
+          />
+        </div>
+        <div class="checkbox checkbox-css m-b-20">
+          <input type="checkbox" id="remember_checkbox" />
+          <label for="remember_checkbox"> Recordarme </label>
+        </div>
+        <div class="login-buttons">
+          <a class="btn btn-success btn-block btn-lg" id="btn-ingreso-app"
+            >Ingresar</a
+          >
+        </div>
+      </form>
+    </div>
+    <!-- end login-content -->
+  </div>
+  <!-- end login -->
+</div>
+<!-- end page container -->

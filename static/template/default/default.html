@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="es">
+<!--<![endif]-->
+
+<!-- Mirrored from seantheme.com/color-admin-v4.3/admin/html/page_blank.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 04 May 2019 15:39:46 GMT -->
+<head>
+	<meta charset="utf-8" />
+	<title>[[ERP]]</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	<link rel="shortcut icon" href="static/images/[[FAVICON]]">
+
+	<!-- ================== BEGIN BASE CSS STYLE ================== -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+	<link href="static/template/default/assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+	<link href="static/template/default/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="static/template/default/assets/plugins/font-awesome/css/all.min.css" rel="stylesheet" />
+	<link href="static/template/default/assets/plugins/animate/animate.min.css" rel="stylesheet" />
+	<link href="static/template/default/assets/css/default/style.min.css" rel="stylesheet" />
+	<link href="static/template/default/assets/css/default/style-responsive.min.css" rel="stylesheet" />
+	<link href="static/template/default/assets/css/default/theme/default.css" rel="stylesheet" id="theme"/>
+	<!-- ================== END BASE CSS STYLE ================== -->
+	<link type="text/css" rel="stylesheet" href="static/template/default/assets/css/default/core.css">
+	<link href="static/template/default/assets/plugins/toastr/toastr.css" rel="stylesheet">
+	<link href="static/template/default/assets/plugins/bootstrap-sweetalert/sweetalert.css" rel="stylesheet">
+	<!-- ================== BEGIN BASE JS ================== -->
+
+
+
+
+	<!-- ================== END BASE JS ================== -->
+</head>
+<body>
+<!-- begin #page-loader -->
+<div id="page-loader" class="fade show"><span class="spinner"></span></div>
+<!-- end #page-loader -->
+
+<!-- begin #page-container -->
+<div id="page-container" class="fade page-sidebar-fixed page-header-fixed has-scroll show page-sidebar-minified">
+	<!-- begin #header -->
+	<div id="header" class="header navbar-inverse">
+		<!-- begin navbar-header -->
+		<div class="navbar-header">
+			<a href="index.php" class="navbar-brand"><span class="navbar-logo"></span>[[ERP]]</a>
+			<button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<!-- end navbar-header -->
+		<!-- begin header-nav -->
+		<ul class="navbar-nav navbar-right">
+			<li>
+				<form class="navbar-form">
+					<div class="form-group">
+						<input type="text" class="form-control" id="headerSearch" placeholder="Buscar Programa" autocomplete="off" />
+						<button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
+					</div>
+					<div class="dropdown-menu dropdown-menu-right show" x-placement="bottom-end" style="position: absolute; display: none;">
+							<!-- SE AGREGA PROGRAMAS DESDE CORE.JS -->
+						</div>
+				</form>
+			</li>
+
+			<li class="dropdown navbar-user">
+				<a href="#" id="data-usuario" class="dropdown-toggle" data-toggle="dropdown">
+					<!-- SE INSERTA USUARIO DE CORE.JS -->
+				</a>
+				<div class="dropdown-menu dropdown-menu-right">
+					<a href="#" class="dropdown-item" onclick="cambioContrasena()">Cambiar Contraseña</a>
+					<div class="dropdown-divider"></div>
+					<a href="#" class="dropdown-item" onclick="logOut()">Salir</a>
+				</div>
+			</li>
+		</ul>
+		<!-- end header navigation right -->
+	</div>
+	<!-- end #header -->
+
+	<!-- begin #sidebar -->
+	<div id="sidebar" class="sidebar">
+		<!-- begin sidebar scrollbar -->
+		<div data-scrollbar="true" data-height="100%">
+
+			<!-- begin sidebar nav -->
+			<ul class="nav" id="main-menu">
+						<!-- SE AGREGA MENU DESDE CORE.JS -->
+			</ul>
+			<!-- end sidebar nav -->
+		</div>
+		<!-- end sidebar scrollbar -->
+	</div>
+	<div class="sidebar-bg"></div>
+	<!-- end #sidebar -->
+
+	<!-- begin #content -->
+	<div id="content" class="content">
+
+		<section>
+			<modulo>
+			</modulo>
+		</section>
+
+	</div>
+
+			<!-- begin theme-panel -->
+		<div class="theme-panel theme-panel-lg">
+			<a href="javascript:;" data-click="theme-panel-expand" class="theme-collapse-btn"><i class="fa fa-cog"></i></a>
+			<div class="theme-panel-content">
+				<h5 class="m-t-0">Color Tema</h5>
+				<ul class="theme-list clearfix">
+					<li><a href="javascript:;" class="bg-red" data-theme="red" data-theme-file="static/template/default/assets/css/default/theme/red.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Red">&nbsp;</a></li>
+					<li><a href="javascript:;" class="bg-pink" data-theme="pink" data-theme-file="static/template/default/assets/css/default/theme/pink.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Pink">&nbsp;</a></li>
+					<li><a href="javascript:;" class="bg-orange" data-theme="orange" data-theme-file="static/template/default/assets/css/default/theme/orange.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Orange">&nbsp;</a></li>
+
+					<li><a href="javascript:;" class="bg-yellow" data-theme="yellow" data-theme-file="static/template/default/assets/css/default/theme/yellow.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Yellow">&nbsp;</a></li>
+					<li><a href="javascript:;" class="bg-lime" data-theme="lime" data-theme-file="static/template/default/assets/css/default/theme/lime.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Lime">&nbsp;</a></li>
+					<li><a href="javascript:;" class="bg-green" data-theme="green" data-theme-file="static/template/default/assets/css/default/theme/green.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Green">&nbsp;</a></li>
+
+					<li><a href="javascript:;" class="bg-teal" data-theme="default" data-theme-file="static/template/default/assets/css/default/theme/default.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default">&nbsp;</a></li>
+					<li><a href="javascript:;" class="bg-aqua" data-theme="aqua" data-theme-file="static/template/default/assets/css/default/theme/aqua.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Aqua">&nbsp;</a></li>
+					<li><a href="javascript:;" class="bg-blue" data-theme="blue" data-theme-file="static/template/default/assets/css/default/theme/blue.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Blue">&nbsp;</a></li>
+
+					<li><a href="javascript:;" class="bg-purple" data-theme="purple" data-theme-file="static/template/default/assets/css/default/theme/purple.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Purple">&nbsp;</a></li>
+					<li><a href="javascript:;" class="bg-indigo" data-theme="indigo" data-theme-file="static/template/default/assets/css/default/theme/indigo.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Indigo">&nbsp;</a></li>
+					<li><a href="javascript:;" class="bg-black" data-theme="black" data-theme-file="static/template/default/assets/css/default/theme/black.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Black">&nbsp;</a></li>
+				</ul>
+				<div class="divider"></div>
+				<div class="row m-t-12">
+					<div class="col-md-12">
+						<label>Encabezado</label>
+						<select name="header-styling" class="form-control form-control-sm">							
+							<option value="2">Inverso</option>
+							<option value="1">X Defecto</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="row m-t-12">
+					<div class="col-md-12">
+						<label>Barra Lateral</label>
+						<select name="sidebar-styling" class="form-control form-control-sm">
+							<option value="1">X Defecto</option>
+							<option value="2">Cuadrícula</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="row m-t-12">
+					<div class="col-md-12">
+						<label>Color Barra</label>
+						<select name="content-gradient" class="form-control form-control-sm">
+							<option value="1">deshabilitado</option>
+							<option value="2">habilitado</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="row m-t-12">
+					<div class="col-md-12">
+						<label>Direccion</label>
+						<select name="direction" class="form-control form-control-sm">
+							<option value="1">Derecha</option>
+							<option value="2">Izquierda</option>
+						</select>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+		<!-- end theme-panel -->
+
+	<!-- begin scroll to top btn -->
+	<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+	<!-- end scroll to top btn -->
+</div>
+<!-- end page container -->
+
+<!-- ================== BEGIN BASE JS ================== -->
+<script src="static/template/default/assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+<script src="static/template/default/assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="static/template/default/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="static/template/default/assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="static/template/default/assets/plugins/js-cookie/js.cookie.js"></script>
+<script src="static/template/default/assets/js/theme/apps.min.js"></script>
+<!-- ================== END BASE JS ================== -->
+<script src="static/template/default/assets/plugins/toastr/toastr.js"></script>
+<script src="static/template/default/assets/plugins/bootstrap-sweetalert/sweetalert.js"></script>
+<script src="static/template/default/assets/js/core/core.js?v20151015"></script>
+<script src="static/template/default/assets/js/theme/apple.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+		App.init();
+	});
+</script>
+
+</body>
+<footer></footer>
+[[PRUEBAS]]
+<!-- Mirrored from seantheme.com/color-admin-v4.3/admin/html/page_blank.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 04 May 2019 15:39:46 GMT -->
+</html>

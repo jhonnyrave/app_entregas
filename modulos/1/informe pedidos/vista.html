@@ -1,0 +1,67 @@
+<div class="container">
+    <ol class="breadcrumb pull-right">
+        <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
+        <li class="breadcrumb-item active">Informe Pedidos</li>
+    </ol>
+    <h1 class="page-header">Informe Pedidos <small>Informacion y trazabilidad de pedidos</small></h1>
+
+    <div class="panel panel-inverse">
+        <!-- begin panel-heading -->
+        <div class="panel-heading">
+            <div class="panel-heading-btn">
+                <a
+                    href="javascript:;"
+                    class="btn btn-xs btn-icon btn-circle btn-default"
+                    data-click="panel-expand"
+                    ><i class="fa fa-expand"></i
+                ></a>
+                <a
+                    href="javascript:;"
+                    class="btn btn-xs btn-icon btn-circle btn-success"
+                    data-click="panel-reload"
+                    ><i class="fa fa-redo"></i
+                ></a>
+                <a
+                    href="javascript:;"
+                    class="btn btn-xs btn-icon btn-circle btn-warning"
+                    data-click="panel-collapse"
+                    ><i class="fa fa-minus"></i
+                ></a>
+                <a
+                    href="javascript:;"
+                    class="btn btn-xs btn-icon btn-circle btn-danger"
+                    data-click="panel-remove"
+                    ><i class="fa fa-times"></i
+                ></a>
+            </div>
+            <h4 class="panel-title">Data Table - Ejemplo</h4>
+        </div>
+        <!-- end panel-heading -->
+
+        <div class="panel-body">
+            <!-- INSERTAR HTML AQUI-->
+
+            <form class="form" role="form" name="frm" id="frm">
+                <table class="table table-hover" id="tabla-ejemplo">
+                    <thead>
+                        <tr>
+                            <th>Usuario</th>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
+                            <th>Correo</th>
+                            <th>Imagen</th>
+                            <th class="text-right">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div class="pull-right">
+                    <button type="button" class="btn btn-success" id="myBoton">
+                        <i class="fa fa-save"></i> Boton
+                    </button>
+                </div>
+            </form>
+        </div>
+        <!-- end panel-body -->
+    </div>
+</div>

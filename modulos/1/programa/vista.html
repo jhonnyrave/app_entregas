@@ -1,0 +1,122 @@
+<div class="row">
+<div class="col-lg-6">
+	<div class="panel panel-inverse">
+		<div class="panel-heading">
+			<div class="panel-heading-btn">
+				<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+				<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-redo"></i></a>
+				<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+				<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+			</div>
+			<h4 class="panel-title">Crear / Editar modulos Administrador de aplicaciones</h4>
+		</div>
+		<div class="panel-body">
+			<div id="content">
+				<!--end #content-->
+				<form class="form" role="form" name='frm' id='frm'>
+					<div class="form-group">
+							<label>Programa</label>
+							<input type="text" class="form-control" id="programa" name='programa' required>						
+					</div>
+					<div class="form-group">
+						<label>Descripcion</label>
+						<input type="text" class="form-control" id="descripcion" name='descripcion' required>
+					</div>
+					<div class="form-group">
+						<label>Menu</label>
+						<select class="form-control select2"  id="menu-programa" name='menu-programa' required></select>
+					</div>
+
+					<div class="checkbox checkbox-css">
+						<input type="checkbox" name="controladorJs" id="controladorJs" value='S' checked="">
+						<label for="controladorJs">Controlador js</label>
+					</div>
+					<div class="checkbox checkbox-css">
+						<input type="checkbox" name="autenticado" id="autenticado" value='S' checked="true">
+						<label for="autenticado">Requiere Autenticaci&oacute;n</label>
+					</div>
+
+					<div class="text-right m-b-0">
+						<button type="button" class=" btn btn-lime" id='btn-grabar-general'><i class="fa fa-save"></i> Grabar programa</button>
+						<button type="button" class="btn btn-danger text-right" id='btn-eliminar-general'><i class="fa fa-trash-alt"></i> Eliminar</button>
+					</div>
+				</form>
+				<!--end #content-->	
+			</div>
+		</div>
+	</div>
+
+</div>
+<div class="col-lg-6">
+	<div class="panel panel-inverse">
+		<div class="panel-heading">
+			<div class="panel-heading-btn">
+				<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+				<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-redo"></i></a>
+				<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+				<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+			</div>
+			<h4 class="panel-title">Permisos de programa</h4>
+		</div>
+		<div class="panel-body">
+			<div id="content">
+				<!--end #content-->
+				<form class="form" role="form" name='frm-permisos' id='frm-permisos'>
+						<table class="table table-condensed table-dark-header">
+							<thead>
+								<tr>
+									<th>Codigo</th>
+									<th>Descripcion</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="text" class="form-control" name='permiso[]' value='A' size=2></td>
+									<td><input type="text" class="form-control" name='descripcion[]' value='Acceso'></td>
+								</tr>
+							</tbody>
+						</table>
+
+					<div class="text-right m-b-0">						
+						<button type="button" class="btn btn-danger" id='btn-agregar-permiso'><i class="fa fa-plus"></i> Agregar</button>
+						<button type="button" class="btn btn-lime text-right" id='btn-grabar-permisos'><i class="fa fa-save"></i> Grabar</button>
+					</div>
+				</form>
+				<!--end #content-->	
+			</div>
+		</div>
+	</div>
+
+	<div class="panel panel-inverse">
+		<div class="panel-heading">
+			<div class="panel-heading-btn">
+				<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+				<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-redo"></i></a>
+				<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+				<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+			</div>
+			<h4 class="panel-title">Componentes</h4>
+		</div>
+		<div class="panel-body">
+			<div id="content">
+				<!--end #content-->
+				<form class="form-horizontal label-left" role="form" name='frm-componentes' id='frm-componentes'>
+					<div class="card card-outlined style-primary">
+				
+						<div class="card-body row">
+						</div>
+					
+							<div class='text-right m-b-0'>
+								<button type="button" class="btn btn-lime text-right" id='btn-grabar-componentes'><i class="fa fa-save"></i> Grabar componentes</button>
+							</div>
+						
+					</div>
+				</form>
+				<!--end #content-->	
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
